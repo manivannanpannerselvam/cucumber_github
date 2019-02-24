@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite111]">
+  <test name="LoginRunner">
+    <classes>
+      <class name="com.cucumber.framework.runner.newtour.Registration_Steprunner1"/>
+    </classes>
+  </test> <!-- LoginRunner -->
+</suite> <!-- Failed suite [Suite111] -->
