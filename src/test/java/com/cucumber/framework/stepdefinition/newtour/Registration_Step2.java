@@ -19,9 +19,11 @@ public class Registration_Step2
 	
 	Registration_Page1 Registrationnewtours;
 	
-	@Then("^Enter the Address in address field  \"([^\"]*)\"$")
-	public void enter_the_Address_in_address_field(String arg1) throws Throwable 
-	{
+	@Then("^Enter the Address in address field \"([^\"]*)\"$")
+	public void enter_the_Address_in_address_field(String arg1) throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	    
+	
 		
 	    // Write code here that turns the phrase above into concrete actions
 

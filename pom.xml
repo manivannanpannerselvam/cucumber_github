@@ -52,6 +52,12 @@
 			<artifactId>testng</artifactId>
 			<version>6.9.10</version>
 		</dependency>
+		<dependency>
+      <groupId>io.rest-assured</groupId>
+      <artifactId>rest-assured</artifactId>
+      <version>3.3.0</version>
+      <scope>test</scope>
+</dependency>
 		
 		<!-- *********  https://mvnrepository.com/artifact/net.masterthought/cucumber-reporting ********-->
 <!-- *********  http://search.maven.org/#search%7Cga%7C1%7Ccucumber-extentsreport **************-->
@@ -78,7 +84,15 @@
    			 <version>3.5.1</version>
 		</dependency>
 		
+		<dependency>
+   		<groupId>com.sun</groupId>
+   		<artifactId>tools</artifactId>
+   		<version>1.8</version>
+   		<scope>system</scope>
+   		<systemPath>C:\Program Files\Java\jdk1.8.0_201\lib\tools.jar</systemPath>
+ 		</dependency>
 		
+		<!-- 
 		<dependency>
    		<groupId>com.sun</groupId>
    		<artifactId>tools</artifactId>
@@ -86,6 +100,7 @@
    		<scope>system</scope>
    		<systemPath>C:\Program Files\Java\jdk1.8.0_201\lib\tools.jar</systemPath>
  </dependency>
+  -->
  <!-- ***********  https://mvnrepository.com/artifact/info.cukes/cucumber-core  ******** -->
  <!-- ************** Adding cucumber related all dependencies in below ***************** -->	
 		<dependency>
@@ -93,12 +108,14 @@
     		<artifactId>cucumber-core</artifactId>
    			<version>1.2.5</version>
 		</dependency> 
+		<!-- 
   		<dependency>
 			<groupId>info.cukes</groupId>
 			<artifactId>cucumber-java</artifactId>
 			<version>1.2.5</version>
 			<scope>test</scope>
 		</dependency>
+		 -->
 		<dependency>
 			<groupId>info.cukes</groupId>
 			<artifactId>cucumber-jvm</artifactId>
@@ -112,16 +129,20 @@
 			<version>1.2.5</version>
 			<scope>test</scope>
 		</dependency>
+		<!--  
 		<dependency>
 			<groupId>info.cukes</groupId>
 			<artifactId>cucumber-jvm-deps</artifactId>
 			<version>1.0.5</version>
 		</dependency>
+		-->
 		<!--  Cucumber Gherkin SYNTAX -->
 		<dependency>
 			<groupId>info.cukes</groupId>
 			<artifactId>gherkin</artifactId>
 			<version>2.12.2</version>
 		</dependency>
+		
+		
 	</dependencies>
 </project>

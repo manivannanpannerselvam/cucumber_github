@@ -1,35 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite111" duration-ms="94557" started-at="2019-02-24T07:31:56Z" finished-at="2019-02-24T07:33:30Z">
+  <suite name="Suite111" duration-ms="358222" started-at="2019-05-23T08:29:33Z" finished-at="2019-05-23T08:35:31Z">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.cucumber.framework.runner.newtour.Registration_Steprunner1@7dcf94f8]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.cucumber.framework.runner.newtour.aktreasignup@6e1ec318]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="LoginRunner" duration-ms="94557" started-at="2019-02-24T07:31:56Z" finished-at="2019-02-24T07:33:30Z">
-      <class name="com.cucumber.framework.runner.newtour.Registration_Steprunner1">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.cucumber.framework.runner.newtour.Registration_Steprunner1@7dcf94f8]" name="setUpClass" is-config="true" duration-ms="5658" started-at="2019-02-24T13:01:56Z" finished-at="2019-02-24T13:02:02Z">
+    <test name="LoginRunner" duration-ms="358222" started-at="2019-05-23T08:29:33Z" finished-at="2019-05-23T08:35:31Z">
+      <class name="com.cucumber.framework.runner.newtour.aktreasignup">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.cucumber.framework.runner.newtour.aktreasignup@6e1ec318]" name="setUpClass" is-config="true" duration-ms="1454" started-at="2019-05-23T16:29:33Z" finished-at="2019-05-23T16:29:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.cucumber.framework.runner.newtour.Registration_Steprunner1@7dcf94f8]" name="feature" duration-ms="88108" started-at="2019-02-24T13:02:02Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-02-24T13:03:30Z">
+        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.cucumber.framework.runner.newtour.aktreasignup@6e1ec318]" name="feature" duration-ms="356240" started-at="2019-05-23T16:29:34Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-05-23T16:35:31Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Veify the Registrtaion page]]>
+                <![CDATA[verify the aktrea signup page]]>
               </value>
             </param>
           </params>
+          <exception class="cucumber.runtime.CucumberException">
+            <message>
+              <![CDATA[java.lang.AssertionError: aktreasi is fail expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[cucumber.runtime.CucumberException: java.lang.AssertionError: aktreasi is fail expected [true] but found [false]
+	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.AssertionError: aktreasi is fail expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.cucumber.framework.stepdefinition.newtour.aktreasi.verify_the_application_not_succesffully(aktreasi.java:65)
+	at ✽.And verify the application not  succesffully.(featurefile/newtours/aktreasign.feature:9)
+]]>
+            </full-stacktrace>
+          </exception> <!-- cucumber.runtime.CucumberException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.cucumber.framework.runner.newtour.Registration_Steprunner1@7dcf94f8]" name="tearDownClass" is-config="true" duration-ms="46" started-at="2019-02-24T13:03:30Z" finished-at="2019-02-24T13:03:30Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.cucumber.framework.runner.newtour.aktreasignup@6e1ec318]" name="tearDownClass" is-config="true" duration-ms="93" started-at="2019-05-23T16:35:31Z" finished-at="2019-05-23T16:35:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- com.cucumber.framework.runner.newtour.Registration_Steprunner1 -->
+      </class> <!-- com.cucumber.framework.runner.newtour.aktreasignup -->
     </test> <!-- LoginRunner -->
   </suite> <!-- Suite111 -->
 </testng-results>

@@ -12,7 +12,6 @@ import com.cucumber.framework.helper.Wait.WaitHelper;
 
 public class Registration_page
 {
-
 	
 	WebDriver driver;
 	private final Logger log = LoggerHelper.getLogger(Registration_page.class);
