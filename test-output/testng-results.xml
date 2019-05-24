@@ -2,19 +2,19 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite111" duration-ms="358222" started-at="2019-05-23T08:29:33Z" finished-at="2019-05-23T08:35:31Z">
+  <suite name="Suite111" duration-ms="322944" started-at="2019-05-24T01:31:05Z" finished-at="2019-05-24T01:36:28Z">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.cucumber.framework.runner.newtour.aktreasignup@6e1ec318]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="LoginRunner" duration-ms="358222" started-at="2019-05-23T08:29:33Z" finished-at="2019-05-23T08:35:31Z">
+    <test name="LoginRunner" duration-ms="322944" started-at="2019-05-24T01:31:05Z" finished-at="2019-05-24T01:36:28Z">
       <class name="com.cucumber.framework.runner.newtour.aktreasignup">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.cucumber.framework.runner.newtour.aktreasignup@6e1ec318]" name="setUpClass" is-config="true" duration-ms="1454" started-at="2019-05-23T16:29:33Z" finished-at="2019-05-23T16:29:34Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.cucumber.framework.runner.newtour.aktreasignup@6e1ec318]" name="setUpClass" is-config="true" duration-ms="1391" started-at="2019-05-24T09:31:05Z" finished-at="2019-05-24T09:31:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.cucumber.framework.runner.newtour.aktreasignup@6e1ec318]" name="feature" duration-ms="356240" started-at="2019-05-23T16:29:34Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-05-23T16:35:31Z">
+        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.cucumber.framework.runner.newtour.aktreasignup@6e1ec318]" name="feature" duration-ms="321165" started-at="2019-05-24T09:31:07Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-05-24T09:36:28Z">
           <params>
             <param index="0">
               <value>
@@ -66,7 +66,7 @@ Caused by: java.lang.AssertionError: aktreasi is fail expected [true] but found 
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.cucumber.framework.runner.newtour.aktreasignup@6e1ec318]" name="tearDownClass" is-config="true" duration-ms="93" started-at="2019-05-23T16:35:31Z" finished-at="2019-05-23T16:35:31Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.cucumber.framework.runner.newtour.aktreasignup@6e1ec318]" name="tearDownClass" is-config="true" duration-ms="142" started-at="2019-05-24T09:36:28Z" finished-at="2019-05-24T09:36:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
