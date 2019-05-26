@@ -16,6 +16,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
 
 import com.cucumber.framework.configreader.ObjectRepo;
 import com.cucumber.framework.configreader.PropertyFileReader;
@@ -33,6 +38,9 @@ import com.google.common.base.Function;
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
+
+
+
 
 /**
  * 
@@ -165,8 +173,8 @@ public class TestBase {
 		
 	}
 	
-	@Before()
-	public void before() throws Exception 
+	@Before
+	public void SDSDSD() throws Exception 
 	{
 	
 		ObjectRepo.reader = new PropertyFileReader();
@@ -174,8 +182,8 @@ public class TestBase {
 	//	log.info(ObjectRepo.reader.getBrowser());
 	}  
 
-	@After()
-	public void after(Scenario scenario) throws Exception 
+	@After
+	public void SFSFSFS(Scenario scenario) throws Exception 
 	{
 		driver.quit();
 		log.info("");

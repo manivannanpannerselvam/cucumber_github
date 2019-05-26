@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite111]">
-  <test name="LoginRunner">
-    <classes>
-      <class name="com.cucumber.framework.runner.newtour.aktreasignup"/>
-    </classes>
-  </test> <!-- LoginRunner -->
-  <test name="LoginRunner(failed)">
+  <test thread-count="5" name="LoginRunner(failed)">
     <classes>
       <class name="com.cucumber.framework.runner.newtour.aktreasignup">
         <methods>

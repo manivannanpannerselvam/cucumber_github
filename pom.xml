@@ -55,7 +55,7 @@
 		
 		
 		
-		
+	<!--  -->	
 		<dependency>
       <groupId>io.rest-assured</groupId>
       <artifactId>rest-assured</artifactId>
@@ -87,7 +87,7 @@
     		 <artifactId>cucumber-reporting</artifactId>
    			 <version>3.5.1</version>
 		</dependency>
-		
+	
 		<dependency>
    		<groupId>com.sun</groupId>
    		<artifactId>tools</artifactId>
@@ -156,6 +156,7 @@
 <configuration>
     <source>1.8</source>
     <target>1.8</target>
+    <encoding>${project.build.sourceEncoding}</encoding>
 </configuration>
 </plugin>
 <plugin>

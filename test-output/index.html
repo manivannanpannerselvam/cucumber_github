@@ -5,7 +5,7 @@
   <meta charset='utf-8'>
   <title>TestNG reports</title>
 
-    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
     <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
@@ -54,7 +54,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Suite111">
-                    <span class="test-stats">2 tests</span>
+                    <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -129,13 +129,13 @@
                   </a> <!-- feature(verify the aktrea signup page) -->
                   <span class="method-name">feature</span>
                   <span class="parameters">(verify the aktrea signup page)</span>
-                  <div class="stack-trace">cucumber.runtime.CucumberException: java.lang.AssertionError: aktreasi is fail expected [true] but found [false]
+                  <div class="stack-trace">cucumber.runtime.CucumberException: java.lang.NullPointerException
 	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
 	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
-Caused by: java.lang.AssertionError: aktreasi is fail expected [true] but found [false]
-	at com.cucumber.framework.stepdefinition.newtour.aktreasi.verify_the_application_not_succesffully(aktreasi.java:65)
-	at ✽.And verify the application not  succesffully.(featurefile/newtours/aktreasign.feature:9)
-... Removed 27 stack frames
+Caused by: java.lang.NullPointerException
+	at com.cucumber.framework.stepdefinition.newtour.aktreasi.open_the_valid_url_in_Aktrea_application(aktreasi.java:27)
+	at ✽.Given open the valid url in Aktrea application(featurefile/newtours/aktreasign.feature:6)
+... Removed 25 stack frames
 </div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Feature)                  </em>
@@ -153,22 +153,11 @@ Caused by: java.lang.AssertionError: aktreasi is fail expected [true] but found 
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite111&quot;&gt;
-  &lt;test name=&quot;LoginRunner&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;LoginRunner&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.cucumber.framework.runner.newtour.aktreasignup&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- LoginRunner --&gt;
-  &lt;test name=&quot;LoginRunner(failed)&quot;&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;com.cucumber.framework.runner.newtour.aktreasignup&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;setUpClass&quot;/&gt;
-          &lt;include name=&quot;feature&quot; invocation-numbers=&quot;0&quot;/&gt;
-          &lt;include name=&quot;tearDownClass&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- com.cucumber.framework.runner.newtour.aktreasignup --&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- LoginRunner(failed) --&gt;
 &lt;/suite&gt; &lt;!-- Suite111 --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -181,9 +170,6 @@ Caused by: java.lang.AssertionError: aktreasi is fail expected [true] but found 
             <ul>
               <li>
                 <span class="test-name">LoginRunner (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">LoginRunner(failed) (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -221,12 +207,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'feature')
 data.setCell(0, 2, 'com.cucumber.framework.runner.newtour.aktreasignup')
-data.setCell(0, 3, 321165);
+data.setCell(0, 3, 5146);
 window.suiteTableData['Suite111']= { tableData: data, tableDiv: 'times-div-Suite111'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 5 minutes</span>
+              <span class="suite-total-time">Total running time: 5 seconds</span>
               <div id="times-div-Suite111">
               </div> <!-- times-div-Suite111 -->
             </div> <!-- times-div -->
@@ -261,11 +247,11 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">feature(verify the aktrea signup page)</span>
-                <span class="method-start">1572 ms</span>
+                <span class="method-start">6569 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">322772 ms</span>
+                <span class="method-start">11738 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
