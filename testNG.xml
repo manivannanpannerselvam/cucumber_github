@@ -4,7 +4,7 @@
     
 	<test name="LoginRunner">
 		<classes>
-			<class name="com.cucumber.framework.runner.newtour.aktreasignup"/>
+			<class name="com.cucumber.framework.runner.newtour.newtour.Registration_steprunner"/>
 		</classes>
 	</test>
 	
