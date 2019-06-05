@@ -174,7 +174,7 @@ public class TestBase {
 	}
 	
 	@Before
-	public void SDSDSD() throws Exception 
+	public void before() throws Exception 
 	{
 	
 		ObjectRepo.reader = new PropertyFileReader();
@@ -183,7 +183,7 @@ public class TestBase {
 	}  
 
 	@After
-	public void SFSFSFS(Scenario scenario) throws Exception 
+	public void after(Scenario scenario) throws Exception 
 	{
 		driver.quit();
 		log.info("");

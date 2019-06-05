@@ -19,7 +19,8 @@ public class AlertHelper{
 	private WebDriver driver;
 	private Logger oLog = LoggerHelper.getLogger(AlertHelper.class);
 	
-	public AlertHelper(WebDriver driver) {
+	public AlertHelper(WebDriver driver) 
+	{
 		this.driver = driver;
 		oLog.debug("AlertHelper : " + this.driver.hashCode());
 	}

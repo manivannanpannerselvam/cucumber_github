@@ -4,7 +4,7 @@
     
 	<test name="LoginRunner">
 		<classes>
-			<class name="com.cucumber.framework.runner.newtour.Registration_steprunner"/>
+			<class name="com.cucumber.framework.runner.Infotech_HR.Login_runner"/>
 		</classes>
 	</test>
 	
