@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite111]">
   <test thread-count="5" name="LoginRunner(failed)">
     <classes>
-      <class name="com.cucumber.framework.runner.newtour.aktreasignup">
+      <class name="com.cucumber.framework.runner.Infotech_HR.Leave_Software_runner">
         <methods>
           <include name="setUpClass"/>
           <include name="feature" invocation-numbers="0"/>
           <include name="tearDownClass"/>
         </methods>
-      </class> <!-- com.cucumber.framework.runner.newtour.aktreasignup -->
+      </class> <!-- com.cucumber.framework.runner.Infotech_HR.Leave_Software_runner -->
     </classes>
   </test> <!-- LoginRunner(failed) -->
 </suite> <!-- Failed suite [Suite111] -->

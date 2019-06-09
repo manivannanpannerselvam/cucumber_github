@@ -26,6 +26,15 @@ public class InfoTech_Page
 	@FindBy(xpath=".//input[@name='txtLogin' or @id='txtLogin']")
 	WebElement successMsgObject;
 	
+	@FindBy(xpath=".//a[@class='dropdown-toggle' and @title='Change Apps']")
+	WebElement successwelcomeobject;
+	
+	@FindBy(xpath=".//input[@name='btnLogin' or @value='LOGIN']")
+	WebElement loginbutton;
+	
+	
+	
+	
 	public InfoTech_Page(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
@@ -43,10 +52,19 @@ public class InfoTech_Page
 		log.info("entering password.." + password);
 		this.password.sendKeys(password);
 	}
+	
+	public void loginButton() throws InterruptedException
+	{
+		loginbutton.click();
+	}
+	
 	public boolean verifySuccessLoginMsg()
 	{
 		return new GenericHelper().isDisplayed(successMsgObject);
 	}
-
+	public boolean verifySuccesswelcomeMsg()
+	{
+		return new GenericHelper().isDisplayed(successwelcomeobject);
+	}
 
 }

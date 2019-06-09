@@ -4,7 +4,7 @@
     
 	<test name="LoginRunner">
 		<classes>
-			<class name="com.cucumber.framework.runner.Infotech_HR.Login_runner"/>
+			<class name="com.cucumber.framework.runner.Infotech_HR.Leave_Software_runner"/>
 		</classes>
 	</test>
 	

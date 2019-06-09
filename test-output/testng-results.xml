@@ -1,11 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="0" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite111" duration-ms="117" started-at="2019-06-05T14:49:19Z" finished-at="2019-06-05T14:49:19Z">
+  <suite name="Suite111" duration-ms="54518" started-at="2019-06-09T14:11:49Z" finished-at="2019-06-09T14:12:44Z">
     <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.cucumber.framework.runner.Infotech_HR.Leave_Software_runner@481a15ff]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test name="LoginRunner" duration-ms="117" started-at="2019-06-05T14:49:19Z" finished-at="2019-06-05T14:49:19Z">
+    <test name="LoginRunner" duration-ms="54518" started-at="2019-06-09T14:11:49Z" finished-at="2019-06-09T14:12:44Z">
+      <class name="com.cucumber.framework.runner.Infotech_HR.Leave_Software_runner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.cucumber.framework.runner.Infotech_HR.Leave_Software_runner@481a15ff]" name="setUpClass" is-config="true" duration-ms="691" started-at="2019-06-09T14:11:49Z" finished-at="2019-06-09T14:11:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.cucumber.framework.runner.Infotech_HR.Leave_Software_runner@481a15ff]" name="feature" duration-ms="53117" started-at="2019-06-09T14:11:50Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-06-09T14:12:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[verify the InfoTech_cloud Leave_Software page]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.cucumber.framework.runner.Infotech_HR.Leave_Software_runner@481a15ff]" name="tearDownClass" is-config="true" duration-ms="544" started-at="2019-06-09T14:12:43Z" finished-at="2019-06-09T14:12:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.cucumber.framework.runner.Infotech_HR.Leave_Software_runner -->
     </test> <!-- LoginRunner -->
   </suite> <!-- Suite111 -->
 </testng-results>

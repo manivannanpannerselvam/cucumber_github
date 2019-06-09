@@ -35,12 +35,19 @@ public class Login_infotech
 	    // Write code here that turns the phrase above into concrete actions
 		login= new InfoTech_Page(TestBase.driver);
 		login.enternamefield(arg1);
+
 	}
 
 	@Then("^Enter the valid passwordsdsd in password field \"([^\"]*)\"$")
 	public void enter_the_valid_passwordsdsd_in_password_field(String arg1) throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
 		login.enterpasswordfield(arg1);
+	}
+	
+	@Then("^click the submit button$")
+	public void click_the_submit_button() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	   login.loginButton();
 	}
 
 	@Then("^verify the applicatisdfsfdsondgdgdd not  successfully\\.$")
@@ -59,6 +66,17 @@ public class Login_infotech
 	public void verify_the_applicationsssaadsasds_successfully() throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
 	   
+		if(login.verifySuccesswelcomeMsg())
+		{
+			log.info("login test is pass");
+		}
+		else
+		{
+			Assert.assertTrue(false, this.getClass().getSimpleName()+" is fail");
+			
+		}
+		
+		
 	}
 
 
